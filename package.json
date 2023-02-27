@@ -1,0 +1,30 @@
+{
+  "name": "node-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/nodemon --watch ./ --exec node ./bin/www",
+    "test": "cross-env NODE_ENV=test mocha --require test/prepare --reporter reporter.js test/index.test.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.21",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.35.0",
+    "faker": "^5.5.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "path-to-regexp": "^6.2.1",
+    "sinon-chai": "^3.7.0",
+    "supertest": "^6.3.3"
+  }
+}
